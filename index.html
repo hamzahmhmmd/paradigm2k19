@@ -40,6 +40,12 @@
       background-position: 50% 50%;
       background-repeat: no-repeat;
     }
+
+    .disabled {
+      opacity: 0.5 !important;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
   </style>
 
   <script src="https://kit.fontawesome.com/dedf882710.js"></script>
@@ -102,7 +108,7 @@
         <div class="ticket hmz-aura">
           <div class="ticket__event">
             <div class="ticket__event__details">
-              <h1 class="ticket__event__title font-roboto"><b>EARLY BIRD</b></h1>
+              <h1 class="ticket__event__title font-roboto"><b>PRESALE 1</b></h1>
               <p class="ticket__event__location font-roboto-con"></p>
               <p class="ticket__event__time font-roboto-con"></p>
             </div>
@@ -112,7 +118,7 @@
           </div>
           <div class="ticket__seating">
             <p class="ticket__seating__highlight font-monument">
-              <a href="#" class="disabled text-decoration-none" style="color: #b30d5c;" data-toggle="modal" data-target="#exampleModalCenter">BUY NOW</a>
+              <a href="#" class="text-decoration-none" style="color: #b30d5c;" data-toggle="modal" data-target="#presale1modal">BUY NOW</a>
             </p>
           </div>
         </div>
@@ -121,7 +127,7 @@
         <div class="ticket hmz-aura">
           <div class="ticket__event">
             <div class="ticket__event__details">
-              <h1 class="ticket__event__title font-roboto"><b>NORMAL</b></h1>
+              <h1 class="ticket__event__title font-roboto"><b>PRESALE 2</b></h1>
               <p class="ticket__event__location font-roboto-con"></p>
               <p class="ticket__event__time font-roboto-con"></p>
             </div>
@@ -140,12 +146,12 @@
         <div class="ticket hmz-aura">
           <div class="ticket__event">
             <div class="ticket__event__details">
-              <h1 class="ticket__event__title font-roboto"><b>LATE BIRD</b></h1>
+              <h1 class="ticket__event__title font-roboto"><b>PRESALE 3</b></h1>
               <p class="ticket__event__location font-roboto-con"></p>
               <p class="ticket__event__time font-roboto-con"></p>
             </div>
             <div class="ticket__event__barcode">
-              <h1 style="font-size:4em;"><b>75K</b></h1>
+              <h1 style="font-size:4em;"><b>??K</b></h1>
             </div>
           </div>
           <div class="ticket__seating">
@@ -158,18 +164,23 @@
     </div>
   </div>
 
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="presale1modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Early Bird Ticket</h5>
+          <h5 class="modal-title" id="exampleModalCenterTitle">Presale 1 Ticket</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <p>
-
+            Untuk informasi lebih lanjut mengenai pembelian tiket Presale 1 kita,
+            silahakan menghubungi CP dibawah ini
+            <br>
+            <br><i class="fas fa-phone"></i> <b>Dea</b> 087788997802
+            <br><i class="fas fa-phone"></i> <b>Asmaul</b> 085770519393
+            <br><i class="fas fa-phone"></i> <b>Rahmah</b> 08563439910
           </p>
         </div>
       </div>
