@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'MonumentExtended Bold';
+  src: url('../fonts/MonumentExtended-Bold.otf');
+}
+
+@font-face {
+  font-family: 'MonumentExtended Regular';
+  src: url('../fonts/MonumentExtended-Regular.otf');
+}
+
+@font-face {
+  font-family: 'MonumentExtended Ultrabold';
+  src: url('../fonts/MonumentExtended-Ultrabold.otf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap');
+
+.font-roboto {
+  font-family: 'Roboto';
+}
+
+.font-roboto-con {
+  font-family: 'Roboto Condensed';
+}
+
+.font-monument {
+  font-family: 'MonumentExtended Regular';
+}
+
+.hmz-aura {
+  box-shadow: 0 0 20px 10px #48173b;
+}
+
+.hmz-gs {
+  height: auto;
+}
+
+/* ticket */
+.ticket {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  background: #ddd;
+  color: #222;
+}
+
+@media (min-width: 768px) {
+  .ticket {
+    flex-direction: row;
+  }
+}
+
+.ticket__event,
+.ticket__seating {
+  padding: 10px;
+}
+
+.ticket__event {
+  display: flex;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .ticket__event {
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.ticket__event__details {
+  flex: 1;
+}
+
+.ticket__event__title,
+.ticket__event__time,
+.ticket__event__location,
+.ticket__event__barcode {
+  display: block;
+  margin: 10px 0 0 0;
+}
+
+.ticket__event__title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.ticket__event__time {
+  font-weight: 600;
+}
+
+.ticket__event__location {
+  color: #999;
+}
+
+.ticket__event__barcode {
+  height: 60px;
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .ticket__event__barcode {
+    margin: 10px 0 0;
+    text-align: left;
+  }
+}
+
+.ticket__seating {
+  border: none;
+  border-top: 2px dashed #48173b;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.ticket__seating::before {
+  top: -7px;
+  left: -7px;
+}
+
+.ticket__seating::after {
+  top: -7px;
+  right: -7px;
+}
+
+.ticket__seating::before,
+.ticket__seating::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: #48173b;
+}
+
+@media (min-width: 768px) {
+  .ticket__seating {
+    border: none;
+    border-left: 2px dashed #48173b;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ticket__seating::before {
+    top: -7px;
+    left: -7px;
+  }
+
+  .ticket__seating::after {
+    top: auto;
+    bottom: -7px;
+    left: -7px;
+  }
+
+  .ticket__seating::before,
+  .ticket__seating::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #48173b;
+  }
+}
+
+.ticket__seating p {
+  text-align: center;
+}
+
+.ticket__seating__highlight {
+  font-weight: 800;
+  color: #04B404;
+}
+
+.ticket__seating__highlight > a {
+  font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .ticket__seating__highlight {
+    display: block;
+  }
+}
+
+@media (max-width: 990px) {
+  .ticket__seating__highlight > a{
+    font-size: 1.5em !important;
+  }
+}
